@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
 
+import LandingPage from './components/LandingPage';
+import PortfolioPiecePage from './components/PortfolioPiecePage';
+import data from './assets/pieceData.json';
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [page, setPage] = React.useState('landing');
+
+    if (page === 'landing') {
+        return <LandingPage setPage={setPage} />
+    } else if (page === 'piece1') {
+        return <PortfolioPiecePage setPage={setPage} content={data[0]} />
+    } else if (page === 'piece2') {
+        return <PortfolioPiecePage setPage={setPage} content={data[1]} />
+    } else if (page === 'piece3') {
+        return <PortfolioPiecePage setPage={setPage} content={data[2]} />
+    } else if (page === 'piece4') {
+        return <PortfolioPiecePage setPage={setPage} content={data[3]} />
+    }
 }
 
 export default App;

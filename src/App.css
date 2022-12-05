@@ -1,38 +1,349 @@
-.App {
-  text-align: center;
+/* https://colorhunt.co/palette/fbf8f1f7ecdee9dac154bab9 */
+@font-face {
+    font-family: consolas;
+    src: url('./assets/fonts/consolas.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    scroll-behavior: smooth;
+    background-color: #F7ECDE;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    padding-top: 100px;
   }
+@media (min-width: 768px) {
+.container {
+    width: 750px;
+}
+}
+@media (min-width: 992px) {
+.container {
+    width: 970px;
+}
+}
+@media (min-width: 1200px) {
+.container {
+    width: 1170px;
+}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.home-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 1200px) {
+    .home-wrapper {
+        flex-direction: column !important;
+    }
+
+    .home-content {
+        align-items: center !important;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.computer-banner {
+    height: 450px;
+    width: 669px;
+
+    background-image: url('./assets/images/desktop1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+.computer-text {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: -80px;
+    margin-left: 178px;
+}
+
+.computer-text > p {
+    color: white;
+    font-family: consolas;
+
+    font-size: 1.4rem;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #4e9d9c;
+
+    margin: 0px;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: #4e9d9c;
+
+    margin: 0px;
+}
+
+a.button1{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #4e9d9c;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color: #4e9d9c;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+a.button1:hover{
+    color: white;
+    background-color:#4e9d9c;
+    cursor: pointer;
+}
+
+@media all and (max-width:30em){
+    a.button1 {
+        display:block;
+        margin:0.4em auto;
+    }
+}
+
+.highlight {
+    background-color: #4d9d9c;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    height: auto;
+    /* margin: 0px 200px 200px 200px; */
+    margin-top: 50px;
+    margin-bottom: 200px;
+    gap: 50px;
+}
+
+.portfolio-piece {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    height: 330px;
+    width: 530px;
+
+    border-radius: 20px;
+
+    background-color: #E9DAC1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.content {
+    position: relative;
+}
+  
+.content .content-overlay {
+    /* background: rgba(233,218,193, 0.8); */
+    background: rgba(0,0 ,0, 0.8);
+
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+  
+.content:hover .content-overlay{
+    opacity: 1;
+}
+  
+.content-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    /* border-radius: 20px; */
+    background-image: url('./assets/images/portfolio/project1-mock.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+  
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+  
+.content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    /* background-color: #F7ECDE; */
+    background-color: black;;
+
+}
+
+.content-title {
+    /* font-weight: 200; */
+    /* color: #4e9d9c; */
+    color: white;
+    font-family: consolas;
+    font-size: 5rem;
+    /* padding: 20px 0px 0px 20px; */
+}
+.fadeIn-bottom{
+    top: 80%;
+}
+
+.portfolio-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.bread-crumbs {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.bread-crumbs > a {
+    color: #4e9d9c;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.portfolio-image {
+    border-radius: 20px;
+}
+
+.carousel-container {
+    position: relative !important;
+    color: white;
+    font-size: 6rem;
+    
+}
+
+.carousel-back {
+    position: absolute;
+    top: 45%;
+    left: 20px;
+
+    cursor: pointer;
+}
+
+.carousel-next {
+    position: absolute;
+    top: 45%;
+    right: 20px;
+
+    cursor: pointer;
+}
+
+.portfolio-desc {
+    margin: 20px;
+}
+
+.accordian {
+    height: 100px;
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #e9dac1;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    margin-bottom: 5px;
+    cursor: pointer;
+
+    color: #97959a;
+}
+
+.accordian-icon {
+    font-size: 4.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20%;
+}
+
+.accordian-title {
+    font-size: 4rem;
+    font-weight: 300;
+
+    text-align: left;
+    width: 70%;
+
+    margin: 0px;
+}
+
+.accordian-drop {
+    width: 10%;
+    font-size: 5rem;
+    font-weight: 800;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.accordian-content {
+    font-size: 1.2rem;
+    padding: 20px;
 }
