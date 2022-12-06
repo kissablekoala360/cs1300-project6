@@ -10,9 +10,9 @@
         ],
         "title": "Food Disposal",
         "url": "https://kissablekoala360.github.io/cs1300-project1/",
-        "context": "In this project, I explored users' interactions with the Sharpe Refectory. As a new student to Brown University, my friends and I have a fresh perspective on the dining hall. Thus, after hearing their complaints I decided to investigate how the Brown U community felt about the Ratty's disposal system.",
-        "research": "To understand the food disposal system, I conducted a series of research steps. Contextualized the space through drawings and documentation. Next, I interviewed people on their experinces. Finally, I aggreigated that data into personas and a story board.",
-        "design": "While I did not go through a series of iterations reflecting on my project I would make the following changes: <br><br>1. I would diferentiate my personas more. <br>2. I would add more expression to my users <br>3. I would ensure components of my website have distinictive styles. <br>4. I would change the fonts to be more accesible. ",
+        "context": "In this project, I explored users' interactions with the Sharpe Refectory. As a new student to Brown University, my friends and I have a fresh perspective on the dining hall. Thus, after hearing their complaints, I decided to investigate how the Brown U community felt about the Ratty's disposal system.",
+        "research": "To understand the food disposal system, I conducted a series of research steps and contextualized the space through drawings and documentation. Next, I interviewed people on their experinces. Finally, I aggreigated that data into personas and a story board.",
+        "design": "While I did not go through a series of iterations reflecting on my project I would make the following changes: <br><br>1. I would differentiate my personas more. <br>2. I would add more expression to my users <br>3. I would ensure components of my website have distinictive styles. <br>4. I would change the fonts to be more accesible. ",
         "conclusion": "This project taught me a lot about how important it is to engage with your target audience. I also learened about the importance of having clear hierarchy in my designs."
     },
     {
@@ -24,9 +24,9 @@
         "title": "Flight Booking",
         "url": "https://kissablekoala360.github.io/cs1300-project5/",
         "context": "The goal of this project was to create an intuitive shopping website. I wanted the design to be simple to use and very clear to the user which features of the site were engaged.",
-        "research": "Through some user tests, I found that users were confused by having no filters labeled in the feature search box while still showing all content avaible. Users found it difficult to clear their filters. Finally, users also found it difficult to distinguish which flights were alread booked.",
-        "design": "Given my user testing I made serval changes to the website. I made it so the default filter state is having all categories selected, thus showing the user all results. I added a clear filter button. Finally, I changed the 'Book Flight' button to a 'Remove Flight' button.",
-        "conclusion": "From the feedback and iterations I received and made, I learened about how important it is to provide clear interactions with your users. Users need an intuitive model which maches their conceptual model."
+        "research": "Through some user tests, I found that users were confused by having no filters labeled in the feature search box while still showing all content available. Users found it difficult to clear their filters. Finally, users also found it difficult to distinguish which flights were already booked.",
+        "design": "Given my user testing, I made several changes to the website. I made it so the default filter state is having all categories selected, thus showing the user all results. I added a clear filter button. Finally, I changed the 'Book Flight' button to a 'Remove Flight' button.",
+        "conclusion": "From the feedback and iterations I received and made, I learned about how important it is to provide clear interactions with your users. Users need an intuitive model which matches their conceptual model."
     },
     {
         "imageList": [
@@ -42,9 +42,9 @@
         "title": "Mental Health",
         "url": "https://www.figma.com/proto/W23uSATPnDe20TOBo8gjE1/Project-4?kind=&node-id=6%3A5&page-id=0%3A1&scaling=scale-down&starting-point-node-id=6%3A5&viewport=809%2C20%2C0.11",
         "context": "In this project my team's goal was to design a website and web application for a startup which help connect people struggling with addiction to a peer support network. Given no design or graphic assets, we were tasked with designing their product.",
-        "research": "After peer review and industry critique our design recieved the following criticisms. <br><br>1. Some of our white on pink text was too hard to read. <br>2. Our navbar was inconsitent and changed page per page<br>2. It was hard to identify which page you were on<br>3. We had a heart on the front page which led people to think it was a dating app",
-        "design": "Given the above feedback, we made the following changes: <br><br>1. We added drop shadow behind the white text <br>2. We made the navbar placement consistent across all pages<br> 4. We differentiated the login and sign up pages <br>3. We added a 'current page' indicator to the navbar <br>4. We removed the heart icon",
-        "conclusion": "From this project I learened the importance of a strong theme. It can be useful in enaging the user. I also learened the importance of simplicity and clarity. Users need to be able to understand their location with a glance of the page."
+        "research": "After peer review and industry critique, our design recieved the following criticisms. <br><br>1. Some of our white on pink text was too hard to read. <br>2. Our navbar was inconsistent and changed page per page<br>2. It was hard to identify which page you were on.<br>3. We had a heart on the front page which led people to think it was a dating app.",
+        "design": "Given the above feedback, we made the following changes: <br><br>1. We added a drop shadow behind the white text. <br>2. We made the navbar placement consistent across all pages.<br> 3. We differentiated the login and sign up pages. <br>4. We added a 'current page' indicator to the navbar. <br>5. We removed the heart icon.",
+        "conclusion": "From this project, I learned the importance of a strong theme. It can be useful in enaging the user. I also learned the importance of simplicity and clarity. Users need to be able to understand their location with a glance of the page."
     },
     {
         "imageList": [
@@ -58,9 +58,9 @@
         ],
         "title": "Vehicle Sales",
         "url": "https://kissablekoala360.github.io/cs1300-project2/responsive/index.html",
-        "context": "My goal for this project was to recreate a fortune 500 ecomerce website and make it more usable.",
-        "research": "I decided upon John Deere because of their niche client base. I noticed that their site did not provide non-familar users with an easy introduction to the website. They provided news, access to immediate parts, and purchasing of new vehicles all in a confusing mess. My goal was to fix this.",
-        "design": "Through out the design proccess, I changed the rescaleability to allow for the website to compress and elements to shrink. I also changed the frontpage to display their products on small tiles which both new users and old users can use to easily navigate. I priotized keeping only content that would be necesary to someone at a glance of the front page.",
-        "conclusion": "This project taught me the importanctance in simplicty. Having less items on a page makes it easier for resizeability and also makes the users experince simplier."
+        "context": "My goal for this project was to recreate a Fortune 500 ecomerce website and make it more usable.",
+        "research": "I decided upon John Deere because of their niche client base. I noticed that their site did not provide non-familiar users with an easy introduction to the website. They provided news, access to immediate parts, and purchasing of new vehicles all in a confusing mess. My goal was to fix this.",
+        "design": "Throughout the design process, I changed the rescaleability to allow for the website to compress and elements to shrink. I also changed the frontpage to display their products on small tiles which both new users and old users can use to easily navigate. I prioritized keeping only content that would be necessary to someone at a glance on the front page.",
+        "conclusion": "This project taught me the importance of simplicty. Having fewer items on a page makes it easier for resizeability and also makes the users' experience simplier."
     }
 ]
