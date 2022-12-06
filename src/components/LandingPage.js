@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import { TypeAnimation } from 'react-type-animation';
 import PortfolioPiece from './PortfolioPiece';
 
@@ -14,36 +15,44 @@ function LandingPage(props) {
     return (
         <div className="app">
             <div className='home-wrapper'>
-                <div className='computer-banner'>
-                    <div className='computer-text'>
-                        <p style={{display: 'flex', flexDirection: 'row'}}><span style={{marginRight: '7px'}}>I study</span>
-                            <TypeAnimation
-                                // Same String at the start will only be typed once, initially
-                                sequence={[
-                                'website design',
-                                1000,
-                                'deep learning',
-                                1000,
-                                'UI/UX design',
-                                1000,
-                                'software design',
-                                1000,
-                                'database design',
-                                1000,
-                                ]}
-                                speed={50} // Custom Speed from 1-99 - Default Speed: 40
-                                wrapper="span" // Animation will be rendered as a <span>
-                                repeat={Infinity} // Repeat this Animation Sequence infinitely
-                                className="highlight"
-                            />
-                        </p>
+                <div className='home-within'>
+                    <div className='computer-banner'>
+                        <div className='computer-text'>
+                            <p style={{display: 'flex', flexDirection: 'row'}}><span style={{marginRight: '7px'}}>I study</span>
+                                <TypeAnimation
+                                    // Same String at the start will only be typed once, initially
+                                    sequence={[
+                                    'website design',
+                                    1000,
+                                    'deep learning',
+                                    1000,
+                                    'UI/UX design',
+                                    1000,
+                                    'software design',
+                                    1000,
+                                    'database design',
+                                    1000,
+                                    ]}
+                                    speed={50} // Custom Speed from 1-99 - Default Speed: 40
+                                    wrapper="span" // Animation will be rendered as a <span>
+                                    repeat={Infinity} // Repeat this Animation Sequence infinitely
+                                    className="highlight"
+                                />
+                            </p>
+                        </div>
                     </div>
-                </div>
 
-                <div className='home-content'>
+                    <div className='home-content'>
                     <h1 >JOHN SMITH</h1>
                     <h3 >BROWN STUDENT & DEVELOPER</h3>
-                    <a style={{ marginTop: '15px'}} className="button1" role="button" href='#portfolio'>Check My Work Out</a>
+                    {/* <a style={{ marginTop: '15px'}} className="button1" role="button" href='#portfolio'>Check My Work Out</a> */}
+                </div>
+                </div>
+
+                <div className='arrow-container'>
+                   <div className='down-button'>
+                        <a href="#portfolio" ><MdOutlineKeyboardArrowDown /></a>
+                    </div>
                 </div>
             </div>
             <div className='container'>

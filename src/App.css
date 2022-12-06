@@ -15,7 +15,7 @@ html {
     margin-right: auto;
     margin-left: auto;
 
-    padding-top: 100px;
+    padding-top: 20px;
   }
 @media (min-width: 768px) {
 .container {
@@ -35,7 +35,7 @@ html {
 
 .home-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -44,8 +44,15 @@ html {
     padding: 20px;
 }
 
+.home-within {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 1200px) {
-    .home-wrapper {
+    .home-within {
         flex-direction: column !important;
     }
 
@@ -88,8 +95,51 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
+
+.down-button {
+    padding-top: 100px;
+    font-size: 9rem;
+    position: absolute;
+    animation: MoveUpDown 2s linear infinite;
+
+    color: #4e9d9c;
+}
+
+.down-button:hover {
+    color: #b7d6d6;
+    cursor: pointer;
+}
+
+a  {
+    color: #4e9d9c !important;
+    cursor: pointer !important;
+}
+
+a:hover  {
+    color: #b7d6d6 !important;
+    cursor: pointer !important;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 10px;
+    }
+  }
 
 h1 {
     font-size: 5rem;
@@ -229,7 +279,7 @@ a.button1:hover{
     left: 50%;
     opacity: 1;
     /* background-color: #F7ECDE; */
-    background-color: black;;
+    background-color: black;
 
 }
 
@@ -294,7 +344,7 @@ a.button1:hover{
 }
 
 .accordian {
-    height: 100px;
+    height: 60px;
     width: 100%;
     padding: 10px 20px 10px 20px;
 
@@ -313,7 +363,7 @@ a.button1:hover{
 }
 
 .accordian-icon {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
 
     display: flex;
     align-items: center;
@@ -323,7 +373,7 @@ a.button1:hover{
 }
 
 .accordian-title {
-    font-size: 4rem;
+    font-size: 2.3rem;
     font-weight: 300;
 
     text-align: left;
@@ -334,7 +384,7 @@ a.button1:hover{
 
 .accordian-drop {
     width: 10%;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 800;
 
     display: flex;
@@ -346,4 +396,8 @@ a.button1:hover{
 .accordian-content {
     font-size: 1.2rem;
     padding: 20px;
+}
+
+.portfolio-desc > a {
+    text-decoration: none !important;
 }

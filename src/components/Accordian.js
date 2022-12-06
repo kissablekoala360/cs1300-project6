@@ -9,7 +9,7 @@ function Accordian(props) {
     }
 
     return (
-        <div style={{marginBottom: 20}}>
+        <div style={{marginBottom: 10}}>
             <div className='accordian' onClick={() => toggleOpen(true)}>
                 <div className='accordian-icon'>{icon}</div>
                 <div className='accordian-title'>{title}</div>
@@ -17,7 +17,7 @@ function Accordian(props) {
             </div>
             {open && (
                 <div className='accordian-content'>
-                    {text}
+                    <div dangerouslySetInnerHTML={{__html: text}} />
                 </div>
             )}
         </div>
