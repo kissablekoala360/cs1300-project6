@@ -401,3 +401,23 @@ a.button1:hover{
 .portfolio-desc > a {
     text-decoration: none !important;
 }
+
+.project-description {
+    margin-bottom: 5px;
+}
+
+.project-link {
+    font-size: 4rem;
+    padding-left: 10px;
+}
+
+.description {
+    width: 75%;
+    font-size: 1.3rem;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
